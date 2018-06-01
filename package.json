@@ -1,0 +1,32 @@
+{
+  "name": "coap-http",
+  "version": "0.0.1",
+  "description": "A coap framework server with proxying capability to http",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape tests/*.test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/efishery/coap-http.git"
+  },
+  "keywords": [
+    "http",
+    "coap",
+    "framework",
+    "server"
+  ],
+  "author": "Ahmad Anshorimuslim Syuhada <ans4175@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/efishery/coap-http#readme",
+  "dependencies": {
+    "coap": "^0.22.0",
+    "matchit": "^1.0.6",
+    "parseurl": "^1.3.2"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "tap-spec": "^4.1.2",
+    "tape": "^4.9.0"
+  }
+}
