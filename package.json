@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/efishery/coap-polka.git"
+    "url": "git+ssh://git@github.com:eFishery/coap-polka.git"
   },
   "keywords": [
     "polka",
@@ -25,7 +25,7 @@
   ],
   "author": "Ahmad Anshorimuslim Syuhada <ans4175@gmail.com>",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/efishery/coap-polka#readme",
+  "homepage": "https://github.com/eFishery/coap-polka#readme",
   "dependencies": {
     "coap": "^0.22.0",
     "matchit": "^1.0.6",
