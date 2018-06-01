@@ -8,6 +8,11 @@ We offer features likewise in mandatory bullet-point format:
 * Nearly identical application API & route pattern definitions with Express.js & Polka
 * proxying CoAP request to HTTP [WIP]
 
+## Todo
+
+* proxying CoAP request to HTTP
+* response JSON format writer
+
 ## Install
 
 ```

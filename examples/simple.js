@@ -1,4 +1,4 @@
-const coapPolka = require('../libs/coap-polka');
+const coapPolka = require('..');
 
 function hello(req, res, next) {
   req.hello = 'world';
@@ -11,11 +11,21 @@ function foo(req, res, next) {
 }
 
 coapPolka()
-  .use(hello, foo)
-  .get('/users/:id', (req, res) => {
+  // .use(hello, foo) // same function different styles
+  .use(hello)
+  .use(foo)
+  .post('/users/:id', (req, res) => {
+    const payloadString = req.payload.toString('utf8');
+    res.setOption('Content-Format', 'application/json');
+    res.end(JSON.stringify({
+      user: req.params.id,
+      payload: payloadString
+    }));
+  })
+  .get('*', (req, res) => {
     console.log(`~> Hello, ${req.hello}`);
     console.log(`~> Foo, ${req.foo}`);
-    res.end(`User: ${req.params.id}`);
+    res.end(`Route All`);
   })
   .listen(3000).then(_ => {
     console.log(`> CoAP Running on localhost:3000`);
