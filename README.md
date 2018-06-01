@@ -46,3 +46,8 @@ coapPolka()
 ```
 ## API
 *TBA*
+
+### License
+
+Copyright (c) 2018 Ahmad Anshorimuslim
+Licensed under the MIT license.
