@@ -1,8 +1,14 @@
 {
   "name": "coap-http",
   "version": "0.0.1",
-  "description": "A coap framework server with proxying capability to http",
+  "description": "A coap framework server with express/polka style",
   "main": "index.js",
+  "contributors": [
+    {
+      "name": "Ahmad Anshorimuslim",
+      "email": "ans4175@gmail.com"
+    }
+  ],
   "scripts": {
     "test": "tape tests/*.test.js | tap-spec"
   },
