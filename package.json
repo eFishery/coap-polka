@@ -1,5 +1,5 @@
 {
-  "name": "coap-http",
+  "name": "coap-polka",
   "version": "0.0.1",
   "description": "A coap framework server with express/polka style",
   "main": "index.js",
@@ -14,17 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/efishery/coap-http.git"
+    "url": "git+ssh://git@bitbucket.org/efishery/coap-polka.git"
   },
   "keywords": [
-    "http",
+    "polka",
+    "express",
     "coap",
     "framework",
     "server"
   ],
   "author": "Ahmad Anshorimuslim Syuhada <ans4175@gmail.com>",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/efishery/coap-http#readme",
+  "homepage": "https://bitbucket.org/efishery/coap-polka#readme",
   "dependencies": {
     "coap": "^0.22.0",
     "matchit": "^1.0.6",
